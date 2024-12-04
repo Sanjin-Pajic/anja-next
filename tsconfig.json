@@ -2,7 +2,10 @@
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
+
+    // If set to false, improves compilation time by skipping type checks of .d.ts files from the node_modules dir.
+    // However, comes with the risk of undetected issues when evaluating local + cross-library type definitions!
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
