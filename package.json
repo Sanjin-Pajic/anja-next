@@ -3,10 +3,10 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "commit": "cz",
+        "dev": "npm run lint && next dev",
+        "build": "npm run lint && next build",
+        "start": "npm run lint && next start",
+        "commit": "npm run lint && cz",
         "lint": "next lint"
     },
     "dependencies": {
